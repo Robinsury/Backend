@@ -22,7 +22,7 @@ sendcookie(user,res,"resgistered successfully",201)
 
 } catch (error) {
     next(error)
-}        
+    }    
 }
 
 
@@ -46,7 +46,7 @@ export const login=async(req,res,next)=>{
 
     sendcookie(user,res,`welcom back, ${user.name}`,200)
     } catch (error) {
-        next(error)
+     next(error)
     }
     
 }
