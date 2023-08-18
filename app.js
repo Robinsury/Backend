@@ -22,7 +22,7 @@ app.use(cookieParser())
 // deployment of domain
 app.use(cors({
    origin:[process.env.FRONTEND_URL],
-   methods:["GET","PUT","POST","DELETE"],
+   methods:["GET","PUT","POST","DELETE"], 
 //    cookies nahi jae ga agar nahi hoga tab
    credentials:true
 }))
