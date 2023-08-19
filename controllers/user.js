@@ -6,7 +6,7 @@ import { sendcookie } from "../utils/features.js";
     
 // }
 
-export const Register=async (req,res)=>{
+export const Register=async (req,res,next)=>{
 try {
     const {name,email,password}=req.body;
 

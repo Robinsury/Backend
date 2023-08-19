@@ -71,7 +71,7 @@ export  const deleteTask =async(req,res,next)=>{
 
     if(!task) return next(new ErrorHandler("task not found",404))
    
-    await task.deleteOne();
+    await task.deleteOne()
 res.status(200).json({
     success:true,
     message:"task deleted",
